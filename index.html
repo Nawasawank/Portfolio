@@ -28,7 +28,7 @@
                 <div class="about-text">
                     <span>Hello there! I'm</span>
                     <h1>Nawasawan Yenrompho</h1>
-                    <p>Digital Engineering student at SIIT, Thammasat University</p>
+                    <p>Senior Digital Engineering student at SIIT, Thammasat University</p>
                     <p>I am deeply Have a background in <strong>Backend Development</strong>, with a strong ability to quickly absorb new concepts and a keen eye for detail. Eager to contribute my energy and creativity to innovative solutions, I am committed to learning and growing in this ever-evolving field.</p>
                     <p>Additionally, I am passionate about learning cybersecurity to protect systems, networks, and data from evolving threats. Alongside this, I'm diving into DevOps to streamline development and operations for faster, more reliable software delivery.</p>
                     
@@ -38,7 +38,10 @@
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Java Spring Boot</span>
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Unit Test</span>
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">Figma</span>
                     </div>
@@ -57,7 +60,7 @@
                             </svg>
      
                         </a>
-                        <a href="https://drive.google.com/file/d/1YjuuGFQLnQuLHtn9gyvkxxCxyayhwsdy/view?usp=sharing" class="social-link">
+                        <a href="https://drive.google.com/file/d/1TzhjfwdfqxXL1xZNDodFXe2WkaQ3_59U/view?usp=sharing" class="social-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                                 <polyline points="14 2 14 8 20 8"></polyline>
@@ -75,105 +78,119 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
         <div class="container">
             <h2>My Projects</h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/oop.png" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag">JAVA</span>
-                            <span class="project-tag">GUI</span>
-                        </div>
-                        <h3>Miscellanious Program</h3>
-                        <p>Developed a Miscellaneous Program with six interactive tools: a Drawing Board with color selection and erasing, a BMI Calculator for health assessment, a Guessing Game with real-time feedback, an Area Calculator for circles and cylinders, a Temperature Converter, and an English Quiz for language improvement.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Nawasawank/java_oop_finalproject.git" class="project-link">
-                                GitHub
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+
+            <div class="project-carousel-container">
+            <button class="carousel-button left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+            <div class="project-carousel" id="projectCarousel">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/warehouse.png" alt="Warehouse Inventory App">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">Supabase</span>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/borrow.png" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">mySQL</span>
-                        </div>
-                        <h3>Borrowing System</h3>
-                        <p>Designed and developed a Borrow-Return System for NECTEC using Flask, MySQL, and a web-based frontend. Implemented user authentication, item tracking, and QR code-based borrowing/returning, with late returns flagged in the system.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Nawasawank/nectec.git" class="project-link">
-                                GitHub
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/pawtopia.png" alt="Project 3">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag">Express.js</span>
-                            <span class="project-tag">React.js</span>
-                            <span class="project-tag">mySQL</span>
-                        </div>
-                        <h3>Pawtopia</h3>
-                        <p>Developed Pawtopia, a pet hospital management system using React.js, Express.js, and MySQL. Enabled users to book appointments for vaccinations, pet park visits, grooming, and swimming. Included user authentication and an easy-to-use dashboard for managing appointments and pet records.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                View Project
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Nawasawank/Pawtopia.git" class="project-link">
-                                GitHub
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                <h3>Khongklang: Warehouse Inventory App</h3>
+                <p>Developed a full-stack warehouse management system using React.js, Express.js, and Supabase. This system allows users to track stock withdrawals, manage item availability, and streamline overall inventory operations.</p>
+                <div class="project-links">
+                <a href="https://github.com/KaweewatN/des422-warehouse-inventory-app">GitHub</a>
                 </div>
             </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/defi.png" alt="AVA DeFi Platform">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                <span class="project-tag">Solidity</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Tailwind</span>
+                <span class="project-tag">Web3.js</span>
+                </div>
+                <h3>AVA: DeFi Lending & Borrowing</h3>
+                <p>Developed AVA, a decentralized finance platform for lending and borrowing ERC-20 tokens. It features collateralized borrowing, dynamic interest rates, liquidation monitoring, and price feeds via Chainlink oracles.</p>
+                <div class="project-links">
+                <a href="https://github.com/Nawasawank/DEFI-Lending-Borrowing.git">GitHub</a>
+                </div>
+            </div>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/pawtopia.png" alt="Project 3">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">mySQL</span>
+                </div>
+                <h3>Pawtopia</h3>
+                <p>Developed Pawtopia, a pet hospital management system using React.js, Express.js, and MySQL. Enabled users to book appointments for vaccinations, pet park visits, grooming, and swimming. Included user authentication and an easy-to-use dashboard for managing appointments and pet records.</p>
+                <div class="project-links">
+                <a href="https://github.com/Nawasawank/Pawtopia.git">GitHub</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/borrow.png" alt="Project 2">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">mySQL</span>
+                </div>
+                <h3>Borrowing System</h3>
+                <p>Designed and developed a Borrow-Return System for NECTEC using Flask, MySQL, and a web-based frontend. Implemented user authentication, item tracking, and QR code-based borrowing/returning, with late returns flagged in the system.</p>
+                <div class="project-links">
+                <a href="https://github.com/Nawasawank/nectec.git">GitHub</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/oop.png" alt="Project 1">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                <span class="project-tag">JAVA</span>
+                <span class="project-tag">GUI</span>
+                </div>
+                <h3>Miscellanious Program</h3>
+                <p>Developed a Miscellaneous Program with six interactive tools: a Drawing Board with color selection and erasing, a BMI Calculator for health assessment, a Guessing Game with real-time feedback, an Area Calculator for circles and cylinders, a Temperature Converter, and an English Quiz for language improvement.</p>
+                <div class="project-links">
+                <a href="https://github.com/Nawasawank/java_oop_finalproject.git">GitHub</a>
+                </div>
+            </div>
+            </div>
+
         </div>
+
+        <button class="carousel-button right" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+    </div>
     </section>
+
 
     <!-- Experience Section -->
     <section class="experience" id="experience">
@@ -206,8 +223,20 @@
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
-                
-        
+                <!-- Experience 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content timeline-left">
+                    <span class="timeline-date">June 2025 - Aug 2025</span>
+                    <h3 class="timeline-position">Software Engineer Internship (Backend)</h3>
+                    <p class="timeline-company">SCB Tech X Company Limited</p>
+                    <p>⭐<strong>Developed RESTful APIs</strong> supporting features in the SCB Easy App (Mobile Banking).</p>
+                    <p>⭐Developed backend services using <strong>Java Spring Boot</strong> within a microservices architecture.</p>
+                    <p>⭐Using in Agile-Scrum development cycles, including sprint planning, daily stand-ups, and retrospectives.</p>
+                    <p>⭐Wrote and executed <strong>unit tests (JUnit)</strong> to ensure the reliability and performance of backend microservices.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
             </div>
         </div>
     </section>
